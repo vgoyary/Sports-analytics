@@ -162,19 +162,6 @@ tracker = Tracker(max_missed=50, feature_similarity_thresh=0.5)
 confidence_thresholds['player'] = 0.2  # Lower for crowded scenes
 ```
 
-**Basketball:**
-```python
-# Faster motion, shorter tracking window
-tracker = Tracker(max_missed=20, feature_similarity_thresh=0.6)
-model.overrides['conf'] = 0.3  # Higher confidence for fast action
-```
-
-**General Sports:**
-```python
-# Balanced settings for mixed sports
-tracker = Tracker(max_missed=30, feature_similarity_thresh=0.6)
-```
-
 ### Hardware Optimization
 
 **GPU Acceleration:**

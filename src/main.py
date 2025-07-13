@@ -34,8 +34,8 @@ def main():
     # Lower confidence thresholds for better detection
     confidence_thresholds = {
         'ball': 0.2,        # Very low threshold for ball detection
-        'player': 0.25,     # Lower threshold for players (was 0.4)
-        'goalkeeper': 0.25, # Lower threshold for goalkeepers (was 0.4)
+        'player': 0.25,     # Lower threshold for players
+        'goalkeeper': 0.25, # Lower threshold for goalkeepers
         'referee': 0.3      # Lower threshold for referees
     }
 

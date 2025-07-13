@@ -1,0 +1,27 @@
+best.pt
+*.log
+*.avi
+*.mov
+*.mkv
+
+# Python cache and environments
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+.env
+.venv/
+env/
+venv/
+pip-log.txt
+
+# Notebook and IDE junk
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

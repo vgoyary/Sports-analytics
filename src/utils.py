@@ -37,7 +37,6 @@ def draw_tracks(frame, tracks, frame_info=None):
             color = (255, 0, 0)  # Default blue
 
         # Draw bounding box with adaptive thickness based on track age
-        # thickness = 3 if hasattr(track, 'age') and track.age > 10 else 2
         thickness = 1
         cv2.rectangle(frame, (x1, y1), (x2, y2), color, thickness)
 
@@ -47,13 +46,6 @@ def draw_tracks(frame, tracks, frame_info=None):
             class_name = class_names.get(track.cls, 'Unknown')
             label += f' ({class_name.capitalize()})'
         
-        # # Add stability indicator
-        # if hasattr(track, 'age'):
-        #     if track.age > 10:
-        #         label += " ✓"  # Stable track
-        #     elif track.age < 3:
-        #         label += " ?"  # New track
-
         # Add background rectangle for better text visibility
         (text_width, text_height), baseline = cv2.getTextSize(
             label, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 2)
